@@ -44,7 +44,7 @@ async function search({ keyword }) {
           <template #content>
             <h4>{{ volumeInfo?.title }}</h4>
             <p class="italic">Publisher : {{ volumeInfo?.publisher }}</p>
-            <p class="text-sm text-gray-400">Publsed At : {{ volumeInfo?.publishedDate }}</p>
+            <p class="text-sm text-gray-400">Published In : {{ volumeInfo?.publishedDate }}</p>
             <a class="pt-2" :href="volumeInfo?.infoLink" target="_blank">
               <button class="mt-3 text-black bg-yellow-500 px-3 py-1 rounded-md">More Info</button>
             </a>
