@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply relative overflow-x-hidden h-[100%] bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat bg-fixed;
+  }
+  .container {
+    @apply px-5 md:px-10 lg:px-12;
+  }
+  h1 {
+    @apply scroll-m-20 text-3xl font-bold tracking-tight lg:text-5xl;
+  }
+  h2 {
+    @apply scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0;
+  }
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+  p {
+    @apply text-sm leading-5 md:text-base [&:not(:first-child)]:mt-3;
+  }
+}
